@@ -31,18 +31,16 @@ Olá! Meu nome é *{}*.
 Eu sou um bot de gerenciamento de grupo modular com alguns extras divertidos! Dê uma olhada no seguinte para ter uma ideia de algumas
 as coisas que eu posso te ajudar.
 
-*Menu Principal* comandos disponíveis:
+*Main* commandos Disponível
  - /start: inicie o bot
- - /settings:
-   - in PM: irá enviar-lhe as suas configurações para todos os módulos suportados.
-   - in a group: irá redirecioná-lo para o pm, com todas as configurações do chat.
-
+ - /settings: Menu Do Bot 
+ 
 {}
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll comandos podem ser usados ​​com / or !.\n")
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-It took lots of work for [my creator](t.me/SonOfLars) to get me to where I am now, and every donation helps \
+It took lots of work for [my creator](t.me/Fraviin) to get me to where I am now, and every donation helps \
 motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
 (see his bio!). He's just a poor student, so every little helps!
 There are two ways of paying him; [Channel](http://telegram.me/Fraviiu), or [Criador](http://t.me/Fraviin)."""
