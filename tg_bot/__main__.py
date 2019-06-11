@@ -41,11 +41,12 @@ as coisas que eu posso te ajudar.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll comandos podem ser usados ​​com / or !.\n")
 
-DONATE_STRING = """Fraviiu, feliz em ouvir que você quer doar!
-Foi preciso muito trabalho para [meu criador] (t.me/Fraviiu) me levar até onde estou agora, e toda doação ajuda
-motivá-lo a me tornar ainda melhor. Todo o dinheiro da doação irá para um melhor VPS para me hospedar, e / ou cerveja
-(veja sua biografia!). Ele é apenas um estudante pobre, então cada pequeno ajuda!
-[Channel] (Telegram.me/Fraviiu). "" "
+DONATE_STRING = """Heya, glad to hear you want to donate!
+It took lots of work for [my creator](t.me/SonOfLars) to get me to where I am now, and every donation helps \
+motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
+(see his bio!). He's just a poor student, so every little helps!
+There are two ways of paying him; [Channel](http://telegram.me/Fraviiu), or [Criador](http://t.me/Fraviin)."""
+ 
 
 IMPORTED = {}
 MIGRATEABLE = []
