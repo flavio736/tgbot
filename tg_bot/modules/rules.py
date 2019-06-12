@@ -25,30 +25,30 @@ def send_rules(update, chat_id, from_pm=False):
     try:
         chat = bot.get_chat(chat_id)
     except BadRequest as excp:
-        if excp.message == "Chat not found" and from_pm:
-            bot.send_message(user.id, "The rules shortcut for this chat hasn't been set properly! Ask admins to "
+        if excp.message == "Bate-papo não encontrado" and from_pm:
+            bot.send_message(user.id, "O atalho de regras para este bate-papo não foi definido corretamente. Peça aos administradores para "
                                       "fix this.")
             return
         else:
             raise
 
     rules = sql.get_rules(chat_id)
-    text = "The rules for *{}* are:\n\n{}".format(escape_markdown(chat.title), rules)
+    text = "Agora as Regras: *{}* está:\n\n{}".format(escape_markdown(chat.title), rules)
 
     if from_pm and rules:
         bot.send_message(user.id, text, parse_mode=ParseMode.MARKDOWN)
     elif from_pm:
-        bot.send_message(user.id, "The group admins haven't set any rules for this chat yet. "
-                                  "This probably doesn't mean it's lawless though...!")
+        bot.send_message(user.id, "Os administradores do grupo ainda não definiram regras para esse bate-papo. "
+                                  "Isso provavelmente não significa que é sem lei embora...!")
     elif rules:
-        update.effective_message.reply_text("Contact me in PM to get this group's rules.",
+        update.effective_message.reply_text("Entre em contato comigo no PV para obter as regras desse grupo.",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="Rules",
+                                                [[InlineKeyboardButton(text="🆕 | Regras",
                                                                        url="t.me/{}?start={}".format(bot.username,
                                                                                                      chat_id))]]))
     else:
-        update.effective_message.reply_text("The group admins haven't set any rules for this chat yet. "
-                                            "This probably doesn't mean it's lawless though...!")
+        update.effective_message.reply_text("Os administradores do grupo ainda não definiram regras para esse bate-papo. "
+                                            "Isso provavelmente não significa que é sem lei embora...!")
 
 
 @run_async
@@ -94,11 +94,11 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
- - /rules: get the rules for this chat.
+ - /rules: pegue as regras para este chat.
 
-*Admin only:*
- - /setrules <your rules here>: set the rules for this chat.
- - /clearrules: clear the rules for this chat.
+*Admin só:*
+ - /setrules <your rules here>: definir as regras para este chat.
+ - /clearrules: limpe as regras para este chat.
 """
 
 __mod_name__ = "Rules"
