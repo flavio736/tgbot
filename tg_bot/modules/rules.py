@@ -64,7 +64,7 @@ def set_rules(bot: Bot, update: Update):
         markdown_rules = markdown_parser(txt, entities=msg.parse_entities(), offset=offset)
 
         sql.set_rules(chat_id, markdown_rules)
-        update.effective_message.reply_text("Successfully set rules for this group.")
+        update.effective_message.reply_text("Definir com sucesso as regras para este grupo.")
 
 
 @run_async
@@ -72,7 +72,7 @@ def set_rules(bot: Bot, update: Update):
 def clear_rules(bot: Bot, update: Update):
     chat_id = update.effective_chat.id
     sql.set_rules(chat_id, "")
-    update.effective_message.reply_text("Successfully cleared rules!")
+    update.effective_message.reply_text("Regras limpas com sucesso!")
 
 
 def __stats__():
@@ -90,14 +90,14 @@ def __migrate__(old_chat_id, new_chat_id):
 
 
 def __chat_settings__(chat_id, user_id):
-    return "This chat has had it's rules set: `{}`".format(bool(sql.get_rules(chat_id)))
+    return "Este bate-papo teve suas regras definidas: `{}`".format(bool(sql.get_rules(chat_id)))
 
 
 __help__ = """
  - /rules: pegue as regras para este chat.
 
 *Admin só:*
- - /setrules <your rules here>: definir as regras para este chat.
+ - /setrules <suas regras aqui>: definir as regras para este chat.
  - /clearrules: limpe as regras para este chat.
 """
 
