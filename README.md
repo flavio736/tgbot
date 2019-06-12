@@ -8,5 +8,5 @@ si
 
 Pode ser encontrado no telegrama como [Fraviiu] (https://t.me/Fravinbot).
 
-Marie e eu estamos moderando um [grupo de apoio] (https://t.me/MarieSupport), onde você pode pedir ajuda para configurar seu
+Fraviiu e eu estamos moderando um [grupo de apoio] (https://t.me/Fraviiu), onde você pode pedir ajuda para configurar seu
 bot, descobrir
