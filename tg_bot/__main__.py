@@ -19,31 +19,31 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Oi meu nome é {}! Se você tiver alguma dúvida sobre como me usar, leia /help
+Olá! Meu nome é *{ }* - estou aqui para ajudar você a gerenciar seus grupos! Hit /help para descobrir mais sobre como me usar todo o meu potencial.
 
-Eu sou um bot de gerente de grupo
-
-Você pode encontrar a lista de comandos disponíveis com /help.
+Querme adicionar ao seu chat?[Clique aqui!](@http://telegram.me/Fravinbot?startgroup=botstart)
 """
 
 HELP_STRINGS = """
-Olá! Meu nome é *{}*.
-Eu sou um bot de gerenciamento de grupo modular com alguns extras divertidos! Dê uma olhada no seguinte para ter uma ideia de algumas
-as coisas que eu posso te ajudar.
+Ei!Meu nome é *{}*.Eu sou um bot de gerenciamento de grupo,aqui para ajudá-lo a se locomover e manter o pedido em seus grupos!
+Eutenho muitos recursos úteis,como controle de inundação,um sistema de aviso,um sistema de anotações e até mesmo respostas pré-determinadas em determinadas palavras-chave.
 
-*Main* commandos Disponível
- - /start: inicie o bot
- - /settings: Menu Do Bot 
+Algunscomandos úteis são:
+ -/ start:começa comigo!Você provavelmente já usou isso.
+ -/help:elimina esta mensagem;Eu vou te contar mais sobre mim!
+ -/donete:fornece informações sobre como apoiar-me e ao meu criador.
+
+Sevocê tiver algum erro ou pergunta sobre como me usar,vá para o @Fraviiu.
+
+ Todosos comandos podem ser usados ​​com:/!
  
 {}
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll comandos podem ser usados ​​com / or !.\n")
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-It took lots of work for [my creator](t.me/Fraviin) to get me to where I am now, and every donation helps \
-motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
-(see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; [Channel](http://telegram.me/Fraviiu), or [Criador](http://t.me/Fraviin)."""
+DONATE_STRING = """Hey, feliz em ouvir que você quer doar!
+Foi preciso muito trabalho para [meu criador] (t.me/Fraviin) me levar até onde estou agora, e toda doação ajuda
+motivá-lo a me tornar ainda melhor. Toda a doação; [Channel](http://telegram.me/Fraviiu), or [Criador](http://t.me/Fraviin)."""
  
 
 IMPORTED = {}
