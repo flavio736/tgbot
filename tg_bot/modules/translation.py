@@ -17,7 +17,7 @@ def translate(bot: Bot, update: Update):
         msg = update.effective_message.reply_to_message
 
         params = dict(
-            lang="US",
+            lang="PT",
             clientVersion="2.0",
             apiKey=API_KEY,
             text=msg.text
@@ -48,7 +48,7 @@ def translate(bot: Bot, update: Update):
 
 
 __help__ = """
- - /t: while replying to a message, will reply with a grammar corrected version
+ - /t: ao responder a uma mensagem, responderá com uma versão corrigida da gramática
 """
 
 __mod_name__ = "Translator"
