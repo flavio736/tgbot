@@ -398,26 +398,26 @@ def clean_welcome(bot: Bot, update: Update, args: List[str]) -> str:
 
 
 WELC_HELP_TXT = "As mensagens de boas-vindas / adeus do seu grupo podem ser personalizadas de várias maneiras. Se você quiser as mensagens" \
-                " para ser gerado individualmente, como a mensagem de boas vindas padrão é, você pode usar * estas * variáveis:\n" \
-                " - `{{first}}`: isso representa o primeiro nome do usuário *\n" \
-                " - `{{last}}`: isso representa o último nome do usuário. Padrões para * primeiro nome * se o usuário não tiver " \
-                "last name.\n" \
-                " - `{{fullname}}`: isso representa o nome do usuário * full *. Padrões para * primeiro nome * se o usuário não tiver " \
-                "last name.\n" \
+                " para ser gerado individualmente, como a mensagem de boas vindas padrão é, você pode usar * estas * variáveis:\n\n" \
+                " - `{{first}}`: isso representa o primeiro nome do usuário *\n\n" \
+                " - `{{last}}`: isso representa o último nome do usuário. Padrões para * primeiro nome * se o usuário não tiver \n\n " \
+                "last name.\n\n" \
+                " - `{{fullname}}`: isso representa o nome do usuário * full *. Padrões para * primeiro nome * se o usuário não tiver\n\n" \
+                "last name.\n\n" \
                 " - `{{username}}`: isso representa o nome de usuário * do usuário *. O padrão é uma * menção * do usuário " \
-                "primeiro nome se não tiver nome de usuário.\n" \
+                "primeiro nome se não tiver nome de usuário.\n\n" \
                 " - `{{mention}}`: isso simplesmente * menciona * um usuário - marcando-os com seu primeiro nome.\n" \
-                " - `{{id}}`: isso representa o usuário *id*\n" \
-                " - `{{count}}`: isso representa o número do membro * do usuário*.\n" \
-                " - `{{chatname}}`: isso representa o nome do bate-papo atual*.\n" \
-                "\Cada variável DEVE estar rodeada por `{{}}` ser substituído.\n" \
+                " - `{{id}}`: isso representa o usuário *id*\n\n" \
+                " - `{{count}}`: isso representa o número do membro * do usuário*.\n\n" \
+                " - `{{chatname}}`: isso representa o nome do bate-papo atual*.\n\n" \
+                "\Cada variável DEVE estar rodeada por `{{}}` ser substituído.\n\n" \
                 "As mensagens de boas-vindas também suportam a marcação, para que você possa tornar qualquer elemento em negrito / itálico / código / links. " \
                 "Os botões também são suportados, para que você possa dar as boas-vindas com um ótimo visual " \
-                "buttons.\n" \
+                "buttons.\n\n" \
                 "Para criar um botão com links para suas regras, use este: `[Rules](buttonurl://t.me/{}?start=group_id)`. " \
                 "Simplesmente substitua `group_id` pelo ID do seu grupo, que pode ser obtido via / id, e você é bom para " \
                 "vai. Observe que os IDs de grupo são geralmente precedidos por um `-` placa; isso é necessário, então por favor não " \
-                "remove it.\n" \
+                "remove it.\n\n" \
                 "Se você está se sentindo divertido, você pode até mesmo definir imagens / gifs / vídeos / mensagens de voz como a mensagem de boas vindas por " \
                 "respondendo à mídia desejada e chamando /setwelcome.".format(dispatcher.bot.username)
 
